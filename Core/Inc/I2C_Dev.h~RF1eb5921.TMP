@@ -1,0 +1,47 @@
+#ifndef I2C_DEV_H
+#define I2C_DEV_H
+
+#include "stm32f4xx_hal.h"
+//#include "main.h"
+//#include "cmsis_os.h"
+
+#define I2C_TIMEOUT 10
+#define GYRO_I2C_ADRESS 0xD0
+#define GYRO_I2C_ID_Who_Am_I 0x0F
+#define GYRO_I2C_ID_OUT_TEMP 0x26
+#define GYRO_I2C_ID_OUT_X_L 0x28
+#define GYRO_I2C_ID_CTRL_REG1 0x20
+#define GYRO_I2C_ID_INT1_CFG 0x30
+#define GYRO_I2C_ID_FIFO_CTRL_REG 0x2E
+#define GYRO_I2C_ID_STATUS_REG 0x27
+#define GYRO_I2C_ONALLAXIS 0xCF
+#define GYRO_I2C_TIMEOUT 10
+#define GYRO_I2C_STATUS_REG 0x27
+
+#define ACSEL_I2C_ADRESS 0x32
+#define ACSEL_I2C_ID_OUT_X_L 0x28
+#define ACSEL_I2C_ID_Who_Am_I 0x0F
+#define ACSEL_I2C_ID_CTRL_REG1 0x20
+#define ACSEL_I2C_ID_FIFO_CTRL_REG 0x2E
+#define ACSEL_I2C_ONALLAXIS 0xFF
+#define ACSEL_I2C_TIMEOUT 10
+extern I2C_HandleTypeDef hi2c2;
+void SetInitI2cPer(void);
+void GyroGetValueAxis (uint16_t *Value,uint8_t Size,uint8_t NumberOfAxis);
+
+#ifdef I2C_PORT
+#define I2C_PORT hi2c2
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+#endif

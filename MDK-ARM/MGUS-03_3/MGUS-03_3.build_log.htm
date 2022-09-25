@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 Microsoft, Microsoft, LIC=6XJEV-P4F92-D1APR-KR3GW-ZBPKW-PLE2Z
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      UL2CM3.DLL V1.159.7.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\kto23\Desktop\work\MGUS-03_3\MDK-ARM\MGUS-03_3.uvprojx
+Project File Date:  07/26/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'MGUS-03_3'
+compiling main.c...
+../Core/Inc/../conf.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/NozzelControl.h(75): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(92): warning:  #47-D: incompatible redefinition of macro "ACSEL_I2C_CTRL_REG1_SETTING"  (declared at line 73 of "../Core/Inc/I2C_Dev.h")
+  #define ACSEL_I2C_CTRL_REG1_SETTING 0x77
+../Core/Src/main.c(94): warning:  #47-D: incompatible redefinition of macro "ACSEL_I2C_CTRL_REG2_SETTING"  (declared at line 75 of "../Core/Inc/I2C_Dev.h")
+  #define ACSEL_I2C_CTRL_REG2_SETTING 0xB0
+../Core/Src/main.c(98): warning:  #47-D: incompatible redefinition of macro "ACSEL_I2C_CTRL_REG4_SETTING"  (declared at line 79 of "../Core/Inc/I2C_Dev.h")
+  #define ACSEL_I2C_CTRL_REG4_SETTING 0x28
+../Core/Src/main.c(571): warning:  #61-D: integer operation result is out of range
+        sFilterConfig.FilterMaskIdLow=(uint16_t)(
+AN_FILTER_MASK_0<<3)|0x04;
+../Core/Src/main.c(584): warning:  #61-D: integer operation result is out of range
+        sFilterConfig.FilterMaskIdLow=(uint16_t)(
+AN_FILTER_MASK_1<<3)|0x04;
+../Core/Src/main.c(871): warning:  #177-D: variable "NomerBloka"  was declared but never referenced
+                uint16_t NomerBloka;//Серийный номер блока
+../Core/Src/main.c(872): warning:  #177-D: variable "YearOfManfacture"  was declared but never referenced
+        uint16_t YearOfManfacture;//год выпуска
+../Core/Src/main.c(873): warning:  #177-D: variable "MounthOfManafacture"  was declared but never referenced
+        uint8_t MounthOfManafacture;//месяц выпуска
+../Core/Src/main.c(874): warning:  #177-D: variable "DayOfManafacture"  was declared but never referenced
+        uint8_t DayOfManafacture;
+../Core/Src/main.c(958): warning:  #940-D: missing return statement at end of non-void function "i3g4250dtr_platform_write" 
+  }
+../Core/Src/main.c(965): warning:  #940-D: missing return statement at end of non-void function "i3g4250dtr_platform_read" 
+  }
+../Core/Src/main.c(971): warning:  #940-D: missing return statement at end of non-void function "ii2s_dh_platform_write" 
+  }
+../Core/Src/main.c(977): warning:  #940-D: missing return statement at end of non-void function "ii2s_dh_platform_read" 
+  }
+../Core/Src/main.c(1188): warning:  #188-D: enumerated type mixed with another type
+                                        RxDataFromBis.contr = 0;
+../Core/Src/main.c(1193): warning:  #188-D: enumerated type mixed with another type
+                                        RxDataFromBis.error_log = 0;
+../Core/Src/main.c(1208): warning:  #188-D: enumerated type mixed with another type
+                                        RxDataFromBis.info = 0;
+../Core/Src/main.c(953): warning:  #177-D: function "i3g4250dtr_platform_write"  was declared but never referenced
+  static int32_t i3g4250dtr_platform_write(void *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len)
+../Core/Src/main.c(959): warning:  #177-D: function "i3g4250dtr_platform_read"  was declared but never referenced
+  static int32_t i3g4250dtr_platform_read(void *handle, uint8_t Reg, uint8_t *Bufp, uint16_t len)
+../Core/Src/main.c(966): warning:  #177-D: function "ii2s_dh_platform_write"  was declared but never referenced
+  static int32_t ii2s_dh_platform_write(void *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len)
+../Core/Src/main.c(295): warning:  #177-D: variable "i3g4250Buff"  was declared but never referenced
+  static int16_t i3g4250Buff[3];
+../Core/Src/main.c(296): warning:  #177-D: variable "iis2dsBuff"  was declared but never referenced
+  static int16_t iis2dsBuff[3];
+../Core/Src/main.c(972): warning:  #177-D: function "ii2s_dh_platform_read"  was declared but never referenced
+  static int32_t ii2s_dh_platform_read(void *handle, uint8_t Reg, uint8_t *Bufp, uint16_t len)
+../Core/Src/main.c: 24 warnings, 0 errors
+linking...
+Program Size: Code=27644 RO-data=1356 RW-data=232 ZI-data=24592  
+FromELF: creating hex file...
+"MGUS-03_3\MGUS-03_3.axf" - 0 Error(s), 24 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_MGUS-03_3
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

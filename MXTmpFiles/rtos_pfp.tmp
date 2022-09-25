@@ -1,0 +1,9 @@
+void StartDefaultTask(void *argument);
+void I2CScanTask(void *argument);
+void ChannelControl(void *argument);
+void Indication(void *argument);
+void ButtonControl(void *argument);
+void CanControl(void *argument);
+void ControlModeDev(void *argument);
+void InclineControl(void *argument);
+void TimeControl(void *argument);#n

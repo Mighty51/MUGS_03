@@ -1,0 +1,104 @@
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+uint32_t defaultTaskBuffer[ 128 ];
+osStaticThreadDef_t defaultTaskControlBlock;
+const osThreadAttr_t defaultTask_attributes = {
+#t.name = "defaultTask",
+#t.cb_mem = &defaultTaskControlBlock,
+#t.cb_size = sizeof(defaultTaskControlBlock),
+#t.stack_mem = &defaultTaskBuffer[0],
+#t.stack_size = sizeof(defaultTaskBuffer),
+#t.priority = (osPriority_t) osPriorityAboveNormal,
+};
+/* Definitions for I2CScan */
+osThreadId_t I2CScanHandle;
+const osThreadAttr_t I2CScan_attributes = {
+#t.name = "I2CScan",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityBelowNormal,
+};
+/* Definitions for ChannelControlT */
+osThreadId_t ChannelControlTHandle;
+const osThreadAttr_t ChannelControlT_attributes = {
+#t.name = "ChannelControlT",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityAboveNormal,
+};
+/* Definitions for IndicationTask */
+osThreadId_t IndicationTaskHandle;
+const osThreadAttr_t IndicationTask_attributes = {
+#t.name = "IndicationTask",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for ButtonControlTa */
+osThreadId_t ButtonControlTaHandle;
+const osThreadAttr_t ButtonControlTa_attributes = {
+#t.name = "ButtonControlTa",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for CanControlTask */
+osThreadId_t CanControlTaskHandle;
+const osThreadAttr_t CanControlTask_attributes = {
+#t.name = "CanControlTask",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for ControlModeDevT */
+osThreadId_t ControlModeDevTHandle;
+const osThreadAttr_t ControlModeDevT_attributes = {
+#t.name = "ControlModeDevT",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for InclineControlT */
+osThreadId_t InclineControlTHandle;
+const osThreadAttr_t InclineControlT_attributes = {
+#t.name = "InclineControlT",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for TimeTask */
+osThreadId_t TimeTaskHandle;
+const osThreadAttr_t TimeTask_attributes = {
+#t.name = "TimeTask",
+#t.stack_size = 128 * 4,
+#t.priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for GyroQueue */
+osMessageQueueId_t GyroQueueHandle;
+const osMessageQueueAttr_t GyroQueue_attributes = {
+#t.name = "GyroQueue"
+};
+/* Definitions for myBinarySem01 */
+osSemaphoreId_t myBinarySem01Handle;
+osStaticSemaphoreDef_t myBinarySem01ControlBlock;
+const osSemaphoreAttr_t myBinarySem01_attributes = {
+#t.name = "myBinarySem01",
+#t.cb_mem = &myBinarySem01ControlBlock,
+#t.cb_size = sizeof(myBinarySem01ControlBlock),
+};
+/* Definitions for myBinarySem02 */
+osSemaphoreId_t myBinarySem02Handle;
+const osSemaphoreAttr_t myBinarySem02_attributes = {
+#t.name = "myBinarySem02"
+};
+/* Definitions for GyroBinSem */
+osSemaphoreId_t GyroBinSemHandle;
+const osSemaphoreAttr_t GyroBinSem_attributes = {
+#t.name = "GyroBinSem"
+};
+/* Definitions for myCountingSem01 */
+osSemaphoreId_t myCountingSem01Handle;
+osStaticSemaphoreDef_t myCountingSem01ControlBlock;
+const osSemaphoreAttr_t myCountingSem01_attributes = {
+#t.name = "myCountingSem01",
+#t.cb_mem = &myCountingSem01ControlBlock,
+#t.cb_size = sizeof(myCountingSem01ControlBlock),
+};
+/* Definitions for GyroCountingSem */
+osSemaphoreId_t GyroCountingSemHandle;
+const osSemaphoreAttr_t GyroCountingSem_attributes = {
+#t.name = "GyroCountingSem"
+};

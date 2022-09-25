@@ -1,0 +1,144 @@
+/* USER CODE BEGIN Header_I2CScanTask */
+/**
+* @brief Function implementing the I2CScan thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_I2CScanTask */
+void I2CScanTask(void *argument)
+{
+#t/* USER CODE BEGIN I2CScanTask */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END I2CScanTask */
+}
+#n
+/* USER CODE BEGIN Header_ChannelControl */
+/**
+* @brief Function implementing the ChannelControlT thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ChannelControl */
+void ChannelControl(void *argument)
+{
+#t/* USER CODE BEGIN ChannelControl */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END ChannelControl */
+}
+#n
+/* USER CODE BEGIN Header_Indication */
+/**
+* @brief Function implementing the IndicationTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_Indication */
+void Indication(void *argument)
+{
+#t/* USER CODE BEGIN Indication */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END Indication */
+}
+#n
+/* USER CODE BEGIN Header_ButtonControl */
+/**
+* @brief Function implementing the ButtonControlTa thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ButtonControl */
+void ButtonControl(void *argument)
+{
+#t/* USER CODE BEGIN ButtonControl */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END ButtonControl */
+}
+#n
+/* USER CODE BEGIN Header_CanControl */
+/**
+* @brief Function implementing the CanControlTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_CanControl */
+void CanControl(void *argument)
+{
+#t/* USER CODE BEGIN CanControl */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END CanControl */
+}
+#n
+/* USER CODE BEGIN Header_ControlModeDev */
+/**
+* @brief Function implementing the ControlModeDevT thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ControlModeDev */
+void ControlModeDev(void *argument)
+{
+#t/* USER CODE BEGIN ControlModeDev */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END ControlModeDev */
+}
+#n
+/* USER CODE BEGIN Header_InclineControl */
+/**
+* @brief Function implementing the InclineControlT thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_InclineControl */
+void InclineControl(void *argument)
+{
+#t/* USER CODE BEGIN InclineControl */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END InclineControl */
+}
+#n
+/* USER CODE BEGIN Header_TimeControl */
+/**
+* @brief Function implementing the TimeTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_TimeControl */
+void TimeControl(void *argument)
+{
+#t/* USER CODE BEGIN TimeControl */
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+#t/* USER CODE END TimeControl */
+}
+#n
